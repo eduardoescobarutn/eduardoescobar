@@ -4,26 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
-    <title>UTN - Primer entrega</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>Coleccionables de Eduardo Escobar - Pagina Principal</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="/" class="link-logo">
-                <h1>
-                    Utn
-                </h1>
-            </a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="./index.html"><img class="img img-thumbnail" src="./multimedia/logo.jpg" alt="Mis coleccionables" style="width:40px;"> Mis coleccionables</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./pages/filatelia.html">Filatelia</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/numismatica.html">Numismática</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/glucofilia.html">Glucofilía</a></li>
+            </ul>
         </div>
-    </header>
-    <nav class="navbar">
-        <ul class="menuPrincipal">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Filatelia</a></li>
-            <li><a href="">Numismatica</a></li>
-            <li><a href="">Glucofilia</a></li>
-        </ul>
     </nav>
+    <main>
+        <div class="container principal">
+            <h3>Mis colecciones</h3>
+            <p>Soy Eduardo Escobar, coleccionista desde 1980 a mi temprana edad de 10 años.</p>
+            <div id="colecciones" class="carousel slide" data-ride="carousel" style="background-color: black;">
+                <ul class="carousel-indicators">
+                  <li data-target="./index.html" data-slide-to="0" class="active"></li>
+                  <li data-target="./index.html" data-slide-to="1"></li>
+                  <li data-target="./index.html" data-slide-to="2"></li>
+                  <li data-target="./index.html" data-slide-to="3"></li>
+                  <li data-target="./index.html" data-slide-to="4"></li>
+                  <li data-target="./index.html" data-slide-to="5"></li>
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./multimedia/fila.png" alt="Filatelia" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Filatelia</h3>
+                      <p>Coleccion de sellos postales</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/numis.png" alt="Monedas" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Numismática</h3>
+                      <p>Coleccion de Monedas</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/nota.png" alt="Billetes" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Notafilia</h3>
+                      <p>Coleccion de billetes de banco</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/gluco.png" alt="Glucofilia" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Glucofilia</h3>
+                      <p>Coleccion de sobres de azucar</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/jack.png" alt="Miniaturas Jack" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Jack</h3>
+                      <p>Coleccion de Miniaturas del Chocolatin Jack</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/figus.png" alt="Figuritas" width="500" height="300">
+                    <div class="carousel-caption">
+                      <h3>Figuritas</h3>
+                      <p>Coleccion de Figuritas antiguas</p>
+                    </div>   
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#colecciones" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#colecciones" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+            <form action="">
+                <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                    <p class="pt-2">
+                    <strong>Inscribite a mis novedades</strong>
+                    </p>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class="form-outline form-white mb-4">
+                    <input type="email" class="form-control" />
+                    <label class="form-label" >Tu Email</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribite
+                    </button>
+                </div>
+                </div>
+            </form>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="./index.html">Eduardo Escobar</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>    <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon">
 </body>
 </html>
